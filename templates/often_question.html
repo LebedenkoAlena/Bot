@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Частозадаваемые вопросы</h1>
+{% for item in questions%}
+<div class="col-md6 border rounded">
+    <h2>{{item.question}}</h2>
+    <div>
+        {{item.answers}}
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
